@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <!-- Importação de bibliotecas de ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -10,15 +11,16 @@
     <!-- Importação do framework Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     
-    <!-- Configuração de viewport para dispositivos móveis -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importação de fontes do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap" rel="stylesheet">
 
-    <title>Ásia e others things</title>
+    <title>Ponte de Palavras</title>
 
     <style>
         h1 {
             color: rgb(226, 43, 134);
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-family: "Dancing Script", cursive;
             font-size: 3em;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -28,59 +30,81 @@
 
         h2 {
             color: rgb(105, 26, 129);
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 3em;
+            font-family: "Edu NSW ACT Cursive", cursive;
+            font-size: 2em;
             text-transform: uppercase;
             letter-spacing: 2px;
             text-align: center;
             margin-bottom: 30px;
-
-            
         }
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             background: linear-gradient(135deg, rgb(2, 19, 46, 0%), rgba(250, 33, 98, 40%));
             color: rgb(65, 146, 192);
-            line-height: 1,7;
+            line-height: 1.7; /* Corrigido para o ponto */
             min-height: 100vh;
             display: flex;
             flex-direction: column;
         }
-        
+
         header {
             background: linear-gradient(135deg, rgb(185, 89, 121, 0%), rgb(149, 132, 187, 40%), rgb(135, 193, 211, 80%));
             padding: 2rem 1rem;
             text-align: center;
             border-bottom: 3px solid rgb(115, 87, 218);
-            color: black;
+            color: rgb(8, 26, 105);
             text-shadow: 0 1px 3px rgb(43, 131, 138);
             box-shadow: 0 4px 6px rgb(91, 52, 114);
-
         }
+
         footer {
             background: linear-gradient(135deg, rgb(126, 23, 126, 0%), rgb(43, 146, 194, 40%));
-            color: rgb(224, 57, 108);
+            color: #fff; /* Cor ajustada para melhorar contraste */
             text-align: center;
-            padding: 1rem;
+            padding: 2rem;
             margin-top: auto;
         }
 
+        .meu-estilo {
+            padding: 2rem;
+            font-family: "Edu NSW ACT Cursive", cursive;
+            color: black;
+            text-align: center;
+        }
+
+        /* Estilos para o conteúdo principal */
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
     </style>
-    
 </head>
 <body>
-    <!--Cabeçalho da página-->
+    <!-- Cabeçalho da página -->
     <header>
-        <h1>Anime, Webtoons e mangás</h1>
+        <h1>Versos que conectam almas</h1>
+        <p><i> Estamos todos conectados</i></p>
     </header>
 
-    <!--Rodapé da pagina-->
+    <main>
+        <section class="meu-estilo">
+            <p><b>fissuras</b></p><br>
+            <p>saudade causa carência</p>
+            <p>carência sente a ausência</p>
+            <p>na ausência cresce um vazio</p>
+            <p>e é nesse vazio que mora você.</p>
+        </section>
+    </main>
+
+    <!-- Rodapé da página -->
     <footer>
-        <p>Oriente</p>
+        <p>&copy; 2025 Ponte de Palavras. Todos os direitos reservados.</p>
     </footer>
-    
-    
 </body>
 </html>
