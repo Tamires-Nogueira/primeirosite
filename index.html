@@ -1,110 +1,188 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Importação de bibliotecas de ícones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    
-    <!-- Importação do framework Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Importação de fontes do Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Ponte de Palavras</title>
+  <!-- Ícones e Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-    <style>
-        h1 {
-            color: rgb(226, 43, 134);
-            font-family: "Dancing Script", cursive;
-            font-size: 3em;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            text-align: center;
-            margin-bottom: 30px;
-        }
+  <!-- Fontes cursivas -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap" rel="stylesheet" />
 
-        h2 {
-            color: rgb(105, 26, 129);
-            font-family: "Edu NSW ACT Cursive", cursive;
-            font-size: 2em;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            text-align: center;
-            margin-bottom: 30px;
-        }
+  <title>Ponte de Palavras</title>
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, rgb(2, 19, 46, 0%), rgba(250, 33, 98, 40%));
-            color: rgb(65, 146, 192);
-            line-height: 1.7; /* Corrigido para o ponto */
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, rgba(2, 19, 46, 0.1), rgba(250, 33, 98, 0.4));
+      color: rgb(65, 146, 192);
+      line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
 
-        header {
-            background: linear-gradient(135deg, rgb(185, 89, 121, 0%), rgb(149, 132, 187, 40%), rgb(135, 193, 211, 80%));
-            padding: 2rem 1rem;
-            text-align: center;
-            border-bottom: 3px solid rgb(115, 87, 218);
-            color: rgb(8, 26, 105);
-            text-shadow: 0 1px 3px rgb(43, 131, 138);
-            box-shadow: 0 4px 6px rgb(91, 52, 114);
-        }
+    header {
+      background: linear-gradient(135deg, rgba(185, 89, 121, 0.2), rgba(149, 132, 187, 0.4), rgba(135, 193, 211, 0.8));
+      padding: 2rem 1rem;
+      text-align: center;
+      border-bottom: 3px solid rgb(115, 87, 218);
+      color: rgb(8, 26, 105);
+      text-shadow: 0 1px 3px rgb(43, 131, 138);
+      box-shadow: 0 4px 6px rgb(91, 52, 114);
+    }
 
-        footer {
-            background: linear-gradient(135deg, rgb(126, 23, 126, 0%), rgb(43, 146, 194, 40%));
-            color: #fff; /* Cor ajustada para melhorar contraste */
-            text-align: center;
-            padding: 2rem;
-            margin-top: auto;
-        }
+    h1 {
+      font-family: "Great Vibes", cursive;
+      font-size: 4em;
+      letter-spacing: 1px;
+      color: rgb(226, 43, 134);
+      margin-bottom: 10px;
+    }
 
-        .meu-estilo {
-            padding: 2rem;
-            font-family: "Edu NSW ACT Cursive", cursive;
-            color: black;
-            text-align: center;
-        }
+    .nav-buttons {
+      margin-top: 1rem;
+    }
 
-        /* Estilos para o conteúdo principal */
-        section {
-            padding: 20px;
-            margin: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-    </style>
+    .nav-buttons a {
+      margin: 0.5rem;
+      padding: 0.5rem 1rem;
+      border: 2px solid #fff;
+      border-radius: 20px;
+      color: white;
+      background-color: rgba(226, 43, 134, 0.7);
+      text-decoration: none;
+      font-family: "Edu NSW ACT Cursive", cursive;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    .nav-buttons a:hover {
+      background-color: rgb(226, 43, 134);
+      transform: scale(1.05);
+    }
+
+    main {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    section {
+      margin: 30px 0;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+      font-family: "Edu NSW ACT Cursive", cursive;
+      color: black;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      color: rgb(105, 26, 129);
+    }
+
+    footer {
+      background: linear-gradient(135deg, rgba(126, 23, 126, 0.2), rgba(43, 146, 194, 0.4));
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+      margin-top: auto;
+    }
+  </style>
 </head>
+
 <body>
-    <!-- Cabeçalho da página -->
-    <header>
-        <h1>Versos que conectam almas</h1>
-        <p><i> Estamos todos conectados</i></p>
-    </header>
+  <header>
+    <h1>Ponte de Palavras</h1>
+    <p><i>Versos que conectam almas</i></p>
 
-    <main>
-        <section class="meu-estilo">
-            <p><b>fissuras</b></p><br>
-            <p>saudade causa carência</p>
-            <p>carência sente a ausência</p>
-            <p>na ausência cresce um vazio</p>
-            <p>e é nesse vazio que mora você.</p>
-        </section>
-    </main>
+    <div class="nav-buttons">
+      <a href="#poesias">Poesias Autorais</a>
+      <a href="#versos">Versos Autorais</a>
+      <a href="#clarice">Poemas Clarice Lispector</a>
+      <a href="#sobre">Sobre</a>
+    </div>
+  </header>
 
-    <!-- Rodapé da página -->
-    <footer>
-        <p>&copy; 2025 Ponte de Palavras. Todos os direitos reservados.</p>
-    </footer>
+  <main>
+    <section id="poesias">
+      <h2>Poesias Autorais</h2>
+      <p><b>Receio</b></p>
+      <p>
+        O medo do nunca mais,<br>
+        É algo plausível <br> 
+        Não é um medo irreconhecível.<br>
+        É um medo real, e às vezes tangível <br>
+        Do qual nos lembramos principalmente quando perdemos algo importante.<br>
+        Você percebe tarde demais,<br> 
+        Que tudo é efêmero <br>
+        Mesmo que às vezes fingimos não notar.<br>
+        Você percebe que o adeus jamais irá acontecer,<br>
+        Porque já é tarde demais.<br>
+        Não espere muito,<br>
+        Porque o tempo é determinante e nunca é suficiente,<br>
+        Porque a vida é um instante e nada é como antes.
+      </p>
+    </section>
+
+    <section id="versos">
+      <h2>Versos Autorais</h2>
+      <p><b>Fissuras</b></p>
+      <p>
+        saudade causa carência<br>
+        carência sente a ausência<br>
+        na ausência cresce um vazio<br>
+        e é nesse vazio que mora você.
+      </p><br>
+
+      <p><b>Espuma do Oceano</b></p>
+      <p>
+        você vem e vai <br>
+        como as ondas do mar <br>
+        é impossível <br>
+        tentar te alcançar.
+      </p>
+    </section>
+
+    <section id="clarice">
+      <h2>Poemas Clarice Lispector</h2>
+      <p>
+        Não se prenda a nada que te defina em tão pouco.<br>
+        Não aceite rótulos, não aceite amarras.<br>
+        Seja livre, seja inteiro.<br><br>
+
+        Não espere que o outro te complete.<br>
+        Transborde por si mesmo,<br>
+        E só então, compartilhe.<br><br>
+
+        A vida é agora.<br>
+        Ame, sinta, viva.<br>
+        Não deixe nada para depois.
+      </p> 
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre</h2>
+      <p>
+        Este site foi criado para expressar sentimentos e criar conexões por meio de palavras,
+        reunindo poesias e versos de minha autoria e inspirações de grandes nomes como Clarice Lispector.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ponte de Palavras. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
+
